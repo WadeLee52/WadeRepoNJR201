@@ -104,3 +104,6 @@ pipenv run celery -A {package名稱}.worker worker --loglevel=info
 # 啟動多個工人
 pipenv run celery -A {package名稱}.worker worker -n worker1 --loglevel=info
 pipenv run celery -A {package名稱}.worker worker -n worker2 --loglevel=info
+
+# 啟動工人接收特定任務
+pipenv run celery -A {package名稱}.worker worker -Q {任務1},{任務2} --loglevel=info
