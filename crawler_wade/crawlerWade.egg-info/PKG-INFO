@@ -71,4 +71,29 @@ pipenv run python
 # 輸入 Ctrl+Shift+P，選擇你要的虛擬環境(直譯器)
 # 再開啟新的Terminal
 
+# 建立package
+pipenv install -e .
 
+# 同步別人repo環境
+pipenv sync
+
+# 啟動yml
+docker compose -f {某名稱}.yml up -d
+
+# 關閉yml
+docker compose -f {某名稱}.yml down
+
+# RabbitMQ
+http://127.0.0.1:15672/
+
+# Flower
+http://127.0.0.1:5555/
+
+# 查看Docker Container(還活著的 container)
+docker ps
+
+# 查看Docker Container(所有的 container)
+docker ps -a
+
+# 查看 container log
+docker logs {Container名稱}

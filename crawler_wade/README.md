@@ -80,3 +80,14 @@ http://127.0.0.1:15672/
 # Flower
 http://127.0.0.1:5555/
 
+# 查看Docker Container(還活著的 container)
+docker ps
+
+# 查看Docker Container(所有的 container)
+docker ps -a
+
+# 查看 container log
+docker logs {Container名稱}
+
+# 安裝celery
+pipenv install celery==5.5.0
