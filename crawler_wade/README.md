@@ -96,4 +96,7 @@ pipenv install celery==5.5.0
 pipenv install sqlalchemy
 
 # producer 發送任務
-pipenv run python crawlerWade/producer.py
+pipenv run python {package名稱}/producer.py
+
+# 啟動工人
+pipenv run celery -A crawlerWade.worker worker --loglevel=info
