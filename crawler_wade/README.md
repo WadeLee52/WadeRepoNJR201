@@ -74,3 +74,9 @@ docker compose -f {某名稱}.yml up -d
 # 關閉yml
 docker compose -f {某名稱}.yml down
 
+# RabbitMQ
+http://127.0.0.1:15672/
+
+# Flower
+http://127.0.0.1:5555/
+
