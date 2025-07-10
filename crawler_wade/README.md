@@ -116,6 +116,9 @@ docker build -f Dockerfile -t {docker帳號}/{image名稱}:0.0.1 .
 # 刪除image
 docker rmi {docker帳號}/{image名稱}:0.0.1
 
+# 上傳image至GitHub
+docker push {docker帳號}/{image名稱}:0.0.1
+
 # 啟動 docker-compose
 docker compose -f {yml名稱}.yml up -d
 
@@ -130,3 +133,6 @@ http://127.0.0.1:8000/
 
 # 查看 volume
 docker volume ls
+
+# 上傳資料到mysql
+pipenv run python crawlerWade/upload_data_to_mysql.py
