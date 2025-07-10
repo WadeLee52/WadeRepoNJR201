@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+crawlerWade/__init__.py
+crawlerWade.egg-info/PKG-INFO
+crawlerWade.egg-info/SOURCES.txt
+crawlerWade.egg-info/dependency_links.txt
+crawlerWade.egg-info/top_level.txt
