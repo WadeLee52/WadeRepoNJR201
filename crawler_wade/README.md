@@ -101,9 +101,14 @@ pipenv run python {package名稱}/producer.py
 # 啟動工人
 pipenv run celery -A {package名稱}.worker worker --loglevel=info
 
-# 啟動多個工人
+# 啟動工人接收特定任務
+pipenv run celery -A {package名稱}.worker worker -Q {任務1},{任務2} --loglevel=info
+
+# 啟動多個工人(一個Terminal一個工人)=>這就是分散式
 pipenv run celery -A {package名稱}.worker worker -n worker1 --loglevel=info
 pipenv run celery -A {package名稱}.worker worker -n worker2 --loglevel=info
 
-# 啟動工人接收特定任務
-pipenv run celery -A {package名稱}.worker worker -Q {任務1},{任務2} --loglevel=info
+# 建立image
+# -f: 指定 Dockerfile 名稱、路徑
+# -t: 建立 image 的名稱
+docker build -f Dockerfile -t {docker帳號}/tibame_crawler:0.0.1 .
