@@ -26,6 +26,7 @@ services:
           # 讓資料不會因為, container close or update, 而遺失
       networks:
           - my_network
+          # - dev
 
   phpmyadmin:
       image: phpmyadmin/phpmyadmin:5.1.0
@@ -38,6 +39,7 @@ services:
         - mysql
       networks:
           - my_network
+          # - dev
      
 networks:
   my_network:
