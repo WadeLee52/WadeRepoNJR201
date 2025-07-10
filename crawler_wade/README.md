@@ -92,11 +92,11 @@ docker logs {Container名稱}
 # 安裝celery (它是python package)
 pipenv install celery==5.5.0
 
-# 安裝sqlalchemy
-pipenv install sqlalchemy
+# 安裝package
+pipenv install {package名稱}
 
 # producer 發送任務
 pipenv run python {package名稱}/producer.py
 
 # 啟動工人
-pipenv run celery -A crawlerWade.worker worker --loglevel=info
+pipenv run celery -A {package名稱}.worker worker --loglevel=info

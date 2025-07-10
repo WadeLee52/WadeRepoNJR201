@@ -1,6 +1,6 @@
 from celery import Celery
 
-from crawler_wade.config import (
+from crawlerWade.config import (
     RABBITMQ_HOST,
     RABBITMQ_PORT,
     WORKER_ACCOUNT,
@@ -11,9 +11,9 @@ app = Celery(
     "task",
     # 只包含 tasks.py 裡面的程式, 才會成功執行
     include=[
-        "crawler.tasks",
-        "crawler.tasks_crawler_finmind",
-        "crawler.tasks_crawler_finmind_duplicate",
+        "crawlerWade.tasks",
+        "crawlerWade.tasks_crawler_finmind",
+        "crawlerWade.tasks_crawler_finmind_duplicate",
     ],
     # 連線到 rabbitmq,
     # pyamqp://user:password@127.0.0.1:5672/
