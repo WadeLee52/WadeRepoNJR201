@@ -28,3 +28,20 @@ docker rmi <image_id_or_name>
 
 # 刪除所有 image
 docker rmi -f $(docker images -aq)
+
+# 用 pyenv 安裝 Python 3.8.10 版本 (它會把 Python 安裝到 ~/.pyenv/versions/ 目錄下)
+pyenv install 3.8.10
+
+# 設定全域（global）預設的 Python 版本為 3.8.10 (執行後 python 就會指向 ~/.pyenv/versions/3.8.10/bin/python)
+pyenv global 3.8.10
+
+# 設定目前資料夾的 Python 版本為 3.8.10 (pyenv 會在當前資料夾（這裡是 ~/WadeRepoNJR201/）寫入一個 .python-version 檔案，內容就是 3.8.10，)
+# 從此以後，在這個資料夾或其子資料夾中執行 python 就會使用 3.8.10
+# local > global 的優先權，所以這會覆蓋 pyenv global 的設定
+pyenv local 3.8.10
+
+# 在目前的 Python（也就是 pyenv 的 3.8.10）環境下安裝特定版本的 pipenv 工具
+# pipenv 是一個用來管理虛擬環境和套件（依照 Pipfile）的工具
+pip install pipenv ==2022.4.8
+
+
