@@ -68,3 +68,9 @@ pipenv install -e .
 # 同步別人repo環境
 pipenv sync
 
+# 啟動yml
+docker compose -f {某名稱}.yml up -d
+
+# 關閉yml
+docker compose -f {某名稱}.yml down
+
