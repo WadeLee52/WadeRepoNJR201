@@ -4,6 +4,7 @@ setup.py
 crawlerWade/__init__.py
 crawlerWade/config.py
 crawlerWade/producer.py
+crawlerWade/producer_crawler_finmind.py
 crawlerWade/tasks.py
 crawlerWade/tasks_crawler_finmind.py
 crawlerWade/tasks_crawler_finmind_duplicate.py
