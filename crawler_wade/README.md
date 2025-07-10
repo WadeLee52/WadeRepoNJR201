@@ -100,3 +100,7 @@ pipenv run python {package名稱}/producer.py
 
 # 啟動工人
 pipenv run celery -A {package名稱}.worker worker --loglevel=info
+
+# 啟動多個工人
+pipenv run celery -A {package名稱}.worker worker -n worker1 --loglevel=info
+pipenv run celery -A {package名稱}.worker worker -n worker2 --loglevel=info
