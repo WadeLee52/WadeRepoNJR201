@@ -65,3 +65,6 @@ pipenv run python
 # 建立package
 pipenv install -e .
 
+# 同步別人repo環境
+pipenv sync
+
