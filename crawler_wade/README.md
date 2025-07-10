@@ -111,4 +111,7 @@ pipenv run celery -A {package名稱}.worker worker -n worker2 --loglevel=info
 # 建立image
 # -f: 指定 Dockerfile 名稱、路徑
 # -t: 建立 image 的名稱
-docker build -f Dockerfile -t {docker帳號}/tibame_crawler:0.0.1 .
+docker build -f Dockerfile -t {docker帳號}/{image名稱}:0.0.1 .
+
+# 刪除image
+docker rmi {docker帳號}/{image名稱}:0.0.1
