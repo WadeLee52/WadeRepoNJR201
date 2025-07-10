@@ -2,6 +2,12 @@ README.md
 pyproject.toml
 setup.py
 crawlerWade/__init__.py
+crawlerWade/config.py
+crawlerWade/producer.py
+crawlerWade/tasks.py
+crawlerWade/tasks_crawler_finmind.py
+crawlerWade/tasks_crawler_finmind_duplicate.py
+crawlerWade/worker.py
 crawlerWade.egg-info/PKG-INFO
 crawlerWade.egg-info/SOURCES.txt
 crawlerWade.egg-info/dependency_links.txt

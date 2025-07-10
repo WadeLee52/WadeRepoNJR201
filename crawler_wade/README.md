@@ -89,5 +89,11 @@ docker ps -a
 # 查看 container log
 docker logs {Container名稱}
 
-# 安裝celery
+# 安裝celery (它是python package)
 pipenv install celery==5.5.0
+
+# 安裝sqlalchemy
+pipenv install sqlalchemy
+
+# producer 發送任務
+pipenv run python crawlerWade/producer.py
