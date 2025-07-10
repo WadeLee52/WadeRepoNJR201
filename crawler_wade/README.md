@@ -62,4 +62,6 @@ pipenv run python
 # 輸入 Ctrl+Shift+P，選擇你要的虛擬環境(直譯器)
 # 再開啟新的Terminal
 
+# 建立package
+pipenv install -e .
 
