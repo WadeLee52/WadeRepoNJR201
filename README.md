@@ -51,3 +51,15 @@ pipenv --python ~/.pyenv/versions/3.8.10/bin/python
 
 # 安裝Package
 pipenv install flask==2.3.3
+
+# 單純在當下環境使用Python
+python
+
+# 在虛擬的Python環境下使用Python
+pipenv run python
+
+# 為了省麻煩，直接將當下環境切換成虛擬環境
+# 輸入 Ctrl+Shift+P，選擇你要的虛擬環境(直譯器)
+# 再開啟新的Terminal
+
+
