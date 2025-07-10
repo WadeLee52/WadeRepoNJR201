@@ -124,3 +124,9 @@ docker network create {network名稱}
 
 # 查看network
 docker network ls
+
+# MySQL
+http://127.0.0.1:8000/
+
+# 查看 volume
+docker volume ls
