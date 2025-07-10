@@ -10,19 +10,19 @@ RUN apt-get update && \
 RUN pip install pipenv==2022.4.8
 
 # 建立工作目錄 /crawler
-RUN mkdir /crawler
+RUN mkdir /crawlerWade
 
 # 將當前目錄（與 Dockerfile 同層）所有內容複製到容器的 /crawler 資料夾
-COPY ./crawler /crawler/crawler
-COPY ./setup.py /crawler
-COPY ./genenv.py /crawler
-COPY ./Pipfile /crawler
-COPY ./Pipfile.lock /crawler
-COPY ./README.md /crawler
-COPY ./local.ini /crawler
+COPY ./crawlerWade /crawler_wade/crawlerWade
+COPY ./setup.py /crawler_wade
+COPY ./genenv.py /crawler_wade
+COPY ./Pipfile /crawler_wade
+COPY ./Pipfile.lock /crawler_wade
+COPY ./README.md /crawler_wade
+COPY ./local.ini /crawler_wade
 
 # 設定容器的工作目錄為 /crawler，後續的指令都在這個目錄下執行
-WORKDIR /crawler/
+WORKDIR /crawlerWade/
 
 # 根據 Pipfile.lock 安裝所有依賴（確保環境一致性）
 RUN pipenv sync
