@@ -119,5 +119,8 @@ docker rmi {docker帳號}/{image名稱}:0.0.1
 # 啟動 docker-compose
 docker compose -f {yml名稱}.yml up -d
 
-# 查看 container log (是否已成功啟動 Celery？、是否有成功連接到 RabbitMQ？、是否有執行任何任務？)
-docker logs {container名稱}
+# 建立network
+docker network create {network名稱}
+
+# 查看network
+docker network ls
