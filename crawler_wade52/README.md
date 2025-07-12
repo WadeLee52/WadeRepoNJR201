@@ -72,7 +72,7 @@ docker rmi -f $(docker images -aq)
 
 
 # 啟動yml
-docker compose -f {某名稱}.yml up -d
+docker compose -f {某名稱}.yml up -d 
 
 # 關閉yml
 docker compose -f {某名稱}.yml down
@@ -102,7 +102,7 @@ pipenv install {package名稱}
 pipenv run python {package名稱}/producer.py
 
 # 啟動工人
-pipenv run celery -A {package名稱}.worker worker --loglevel=info
+pipenv run celery -A {package名稱}.worker worker --loglevel=info -E
 
 # 啟動工人接收特定任務
 pipenv run celery -A {package名稱}.worker worker -Q {任務1},{任務2} --loglevel=info

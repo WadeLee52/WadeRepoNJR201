@@ -13,7 +13,7 @@ app = Celery(
     include=[
         "crawlerWade52.tasks",
         "crawlerWade52.tasks_crawler_finmind",
-        "crawlerWade52.tasks_crawler_finmind_duplicate",
+        # "crawlerWade52.tasks_crawler_finmind_duplicate",
     ],
     # 連線到 rabbitmq,
     # pyamqp://user:password@127.0.0.1:5672/
