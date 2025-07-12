@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 flask = "==2.3.3"
+crawlerwade52 = {editable = true, path = "."}
 
 [dev-packages]
 
