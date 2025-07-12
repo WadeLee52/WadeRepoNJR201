@@ -143,3 +143,6 @@ docker volume ls
 
 # 上傳資料到mysql
 pipenv run python crawlerWade/upload_data_to_mysql.py
+
+# 建立.env環境變數
+ENV=DEV python genenv.py
