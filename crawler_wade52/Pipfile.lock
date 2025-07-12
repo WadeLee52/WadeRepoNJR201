@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dd74a27396049b8e2346c6b3e96d0260a648e1d3e2437e3acc0fd9a9346f1e38"
+            "sha256": "441afb9ec1c78bd7ec62c5ea1fac014886d219eb39e9401b0d09a0b7a3d0cfb1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,6 +31,10 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==8.1.8"
+        },
+        "crawler-wade52": {
+            "editable": true,
+            "path": "."
         },
         "flask": {
             "hashes": [
