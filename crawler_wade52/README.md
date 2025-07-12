@@ -18,7 +18,7 @@ pip install pipenv==2022.4.8
 
 # 用指定的 Python 執行檔建立 pipenv 虛擬環境
 # 叫 pipenv 使用 ~/.pyenv/versions/3.8.10/bin/python 這個 特定版本的 Python 在你當前的資料夾（例如 ~/WadeRepoNJR201/）中 建立一個新的虛擬環境
-# 建立後會產生.venv/ 資料夾（或是放在其他地方，依照 pipenv 設定）、Pipfile 檔案、Pipfile.lock
+# 建立後會產生Pipfile 檔案
 pipenv --python ~/.pyenv/versions/3.8.10/bin/python
 
 # 更新Pilfile.lock (依 Pipfile 安裝相容的最新版套件)
