@@ -42,6 +42,6 @@ def crawler_finmind(stock_id):
         df = pd.DataFrame(data["data"])
         print(df)
         # print("upload db")
-        # upload_data_to_mysql(df)
+        upload_data_to_mysql(df)
     else:
         print(data["msg"])

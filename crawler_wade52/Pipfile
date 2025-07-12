@@ -11,6 +11,7 @@ pandas = "*"
 requests = "*"
 sqlalchemy = "*"
 loguru = "*"
+apscheduler = "*"
 
 [dev-packages]
 

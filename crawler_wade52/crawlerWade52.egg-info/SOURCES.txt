@@ -3,11 +3,15 @@ pyproject.toml
 setup.py
 crawlerWade52/__init__.py
 crawlerWade52/config.py
+crawlerWade52/convert_json_to_dataframe.py
 crawlerWade52/producer.py
 crawlerWade52/producer_crawler_finmind.py
+crawlerWade52/producer_crawler_finmind_duplicate.py
 crawlerWade52/producer_multi_queue.py
+crawlerWade52/scheduler.py
 crawlerWade52/tasks.py
 crawlerWade52/tasks_crawler_finmind.py
+crawlerWade52/tasks_crawler_finmind_duplicate.py
 crawlerWade52/upload_data_to_mysql.py
 crawlerWade52/worker.py
 crawlerWade52.egg-info/PKG-INFO
