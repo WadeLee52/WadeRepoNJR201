@@ -10,6 +10,7 @@ celery = "==5.5.0"
 pandas = "*"
 requests = "*"
 sqlalchemy = "*"
+loguru = "*"
 
 [dev-packages]
 
