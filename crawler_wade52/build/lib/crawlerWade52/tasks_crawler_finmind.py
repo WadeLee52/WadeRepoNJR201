@@ -11,6 +11,7 @@ def upload_data_to_mysql(df: pd.DataFrame):
     # 格式：mysql+pymysql://使用者:密碼@主機:port/資料庫名稱
     # 上傳到 mydb, 同學可切換成自己的 database
     address = f"mysql+pymysql://{MYSQL_ACCOUNT}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/mydb"
+    #原本是 address = "mysql+pymysql://root:test@127.0.0.1:3306/mydb"
 
     # 建立 SQLAlchemy 引擎物件
     engine = create_engine(address)

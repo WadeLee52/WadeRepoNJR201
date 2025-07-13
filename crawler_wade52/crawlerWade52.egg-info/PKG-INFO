@@ -157,3 +157,8 @@ pipenv run python crawlerWade/upload_data_to_mysql.py
 ENV=DEV python genenv.py
 ENV=DOCKER python genenv.py
 ENV=PRODUCTION python genenv.py
+
+# 啟動yml (依照指定的image)
+DOCKER_IMAGE_VERSION={image 版本} docker compose -f {yml名稱}.yml up -d
+# 關閉yml (依照指定的image)
+DOCKER_IMAGE_VERSION={image 版本} docker compose -f {yml名稱}.yml down
