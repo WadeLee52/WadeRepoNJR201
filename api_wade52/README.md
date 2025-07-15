@@ -45,4 +45,6 @@
     DOCKER_IMAGE_VERSION=0.0.1 docker compose -f docker-compose-api-network-version.yml up -d
 
 
-
+# 網站
+http://127.0.0.1:8888/docs
+http://127.0.0.1:8888/redoc
