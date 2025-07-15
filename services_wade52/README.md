@@ -45,6 +45,9 @@ http://127.0.0.1:9000
 ## deploy-mysql:
 	docker stack deploy --with-registry-auth -c mysql.yml mysql
 
+# 打開phpMyAdmin 服務:
+http://127.0.0.1:8080/
+
 ## deploy-rabbitmq:
 	docker stack deploy --with-registry-auth -c rabbitmq.yml rabbitmq
 
