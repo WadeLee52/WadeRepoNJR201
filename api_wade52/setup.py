@@ -8,7 +8,7 @@ with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="api",  # Required
+    name="api_wade52",  # Required
     version="0.0.1",  # Required
     description="test",  # Optional
     long_description=long_description,  # Optional
