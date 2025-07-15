@@ -10,6 +10,10 @@
 
     docker swarm init
 
+# 若發現本機已經是 Docker Swarm 的一部分（可能是 manager 或 worker node），所以你無法再次執行 docker swarm init。
+# 重新建立 Swarm，然後重新初始化
+docker swarm leave --force
+
 ## 初始化後，會出現一段訊息，讓 Node 加入 Swarm 集群
 
     docker swarm join --token SWMTKN-xxxx xxx.xxx.xxx.xx:2377
