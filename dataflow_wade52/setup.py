@@ -8,13 +8,13 @@ with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="dataflow",  # Required
+    name="dataflow_wade52",  # Required
     version="0.0.1",  # Required
     description="test",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
-    author="linsam",  # Optional
-    author_email="samlin266118@gmail.com",  # Optional
+    author="wade",  # Optional
+    author_email="w24810@gmail.com",  # Optional
     classifiers=[  # Optional
         "Development Status :: 3 - Alpha",
     ],

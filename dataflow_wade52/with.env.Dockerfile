@@ -10,10 +10,10 @@ RUN apt-get update && \
 RUN pip install pipenv==2022.4.8
 
 # 建立工作目錄 /dataflow
-RUN mkdir /dataflow
+RUN mkdir /dataflow_wade52
 
 # 將當前目錄（與 Dockerfile 同層）所有內容複製到容器的 /dataflow 資料夾
-COPY ./src /dataflow/src
+COPY ./src /dataflow_wade52/src
 COPY ./setup.py /dataflow
 COPY ./genenv.py /dataflow
 COPY ./Pipfile /dataflow
@@ -23,7 +23,7 @@ COPY ./local.ini /dataflow
 COPY ./airflow.cfg /dataflow
 
 # # 設定容器的工作目錄為 /dataflow，後續的指令都在這個目錄下執行
-WORKDIR /dataflow/
+WORKDIR /dataflow_wade52/
 
 # # 根據 Pipfile.lock 安裝所有依賴（確保環境一致性）
 RUN pipenv sync
