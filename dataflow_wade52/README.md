@@ -73,3 +73,7 @@
 
 # Create user
 pipenv run airflow users create --username admin --firstname lin --lastname sam --role Admin -p admin --email finmind.tw@gmail.com
+
+# airflow
+http://127.0.0.1:5000
+
