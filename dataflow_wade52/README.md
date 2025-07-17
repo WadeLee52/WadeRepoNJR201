@@ -27,6 +27,7 @@
 # Docker
 
 #### build docker image
+# Mac的話要加上arm64
 
     docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.1 .
     docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.1.arm64 .
