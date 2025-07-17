@@ -40,6 +40,7 @@
     docker build -f with.env.Dockerfile -t linsamtw/tibame_dataflow:0.0.5.arm64 .
 
 #### push docker image
+# Mac的話要加上arm64
 
     docker push linsamtw/tibame_dataflow:0.0.1
     docker push linsamtw/tibame_dataflow:0.0.1.arm64
