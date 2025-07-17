@@ -14,13 +14,13 @@ RUN mkdir /dataflow_wade52
 
 # 將當前目錄（與 Dockerfile 同層）所有內容複製到容器的 /dataflow 資料夾
 COPY ./src /dataflow_wade52/src
-COPY ./setup.py /dataflow
-COPY ./genenv.py /dataflow
-COPY ./Pipfile /dataflow
-COPY ./Pipfile.lock /dataflow
-COPY ./README.md /dataflow
-COPY ./local.ini /dataflow
-COPY ./airflow.cfg /dataflow
+COPY ./setup.py /dataflow_wade52
+COPY ./genenv.py /dataflow_wade52
+COPY ./Pipfile /dataflow_wade52
+COPY ./Pipfile.lock /dataflow_wade52
+COPY ./README.md /dataflow_wade52
+COPY ./local.ini /dataflow_wade52
+COPY ./airflow.cfg /dataflow_wade52
 
 # # 設定容器的工作目錄為 /dataflow，後續的指令都在這個目錄下執行
 WORKDIR /dataflow_wade52/
