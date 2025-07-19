@@ -62,5 +62,8 @@ http://127.0.0.1:8080/
 ## 部屬 API:
 	DOCKER_IMAGE_VERSION=0.0.1 docker stack deploy --with-registry-auth -c docker-compose-api-network-version-swarm.yml api
 
+# 檢查有哪些stack
+docker stack ls
+
 ## rm stack
 	docker stack rm airflow api crawler mysql rabbitmq
