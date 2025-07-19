@@ -135,6 +135,9 @@ docker network create {network名稱}
 # 查看network
 docker network ls
 
+# 查看network 被誰使用
+docker network inspect {network名稱}
+
 # MySQL
 http://127.0.0.1:8000/
 
