@@ -77,3 +77,20 @@ pipenv run airflow users create --username admin --firstname lin --lastname sam 
 # airflow
 http://127.0.0.1:5000
 
+# 重來，清除所有airflow，清完才可以殺掉image
+docker stack rm airflow
+
+# 查看所有images
+docker images
+
+# 殺掉某images
+docker rmi wade52/tibame_dataflow:0.0.2
+
+# 重建images
+docker build -f with.env.Dockerfile -t wade52/tibame_dataflow:0.0.2 .
+
+# push images
+docker push wade52/tibame_dataflow:0.0.2
+
+# 建立airflow
+DOCKER_IMAGE_VERSION=0.0.2 docker stack deploy --with-registry-auth -c docker-compose-airflow.yml airflow
