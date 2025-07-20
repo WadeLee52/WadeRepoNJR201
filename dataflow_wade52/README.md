@@ -92,5 +92,8 @@ docker build -f with.env.Dockerfile -t wade52/tibame_dataflow:0.0.2 .
 # push images
 docker push wade52/tibame_dataflow:0.0.2
 
+# 先初始化db
+pipenv run airflow db init
+
 # 建立airflow
 DOCKER_IMAGE_VERSION=0.0.2 docker stack deploy --with-registry-auth -c docker-compose-airflow.yml airflow
