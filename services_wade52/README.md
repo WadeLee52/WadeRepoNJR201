@@ -67,3 +67,27 @@ docker stack ls
 
 ## rm stack
 	docker stack rm airflow api crawler mysql rabbitmq
+
+## ubuntu 安裝 docker
+
+	sudo apt-get update
+	sudo apt-get install docker.io -y
+
+## 將你的帳號加入 docker group
+	sudo usermod -aG docker $USER
+
+## 登入 docker
+	docker login -u linsamtw
+
+## upload_taiwan_stock_price_to_mysql
+	DOCKER_IMAGE_VERSION=0.0.7 docker stack deploy --with-registry-auth -c docker-compose-upload_taiwan_stock_price_to_mysql.yml upload
+	DOCKER_IMAGE_VERSION=0.0.9 docker stack deploy --with-registry-auth -c docker-compose-upload_taiwan_stock_price_to_mysql.yml upload
+
+## 設定 linode hostname
+	sudo hostname manager
+	sudo hostname mysql
+	sudo hostname rabbitmq
+	sudo hostname airflow
+
+## 啟動 redash
+	docker stack deploy -c docker-compose-redash.yml redash
