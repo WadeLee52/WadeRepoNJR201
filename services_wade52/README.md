@@ -79,6 +79,9 @@ docker stack ls
 ## 登入 docker
 	docker login -u wade52
 
+# 在manager執行
+docker swarm join-token worker
+
 ## upload_taiwan_stock_price_to_mysql
 	DOCKER_IMAGE_VERSION=0.0.7 docker stack deploy --with-registry-auth -c docker-compose-upload_taiwan_stock_price_to_mysql.yml upload
 	DOCKER_IMAGE_VERSION=0.0.9 docker stack deploy --with-registry-auth -c docker-compose-upload_taiwan_stock_price_to_mysql.yml upload
