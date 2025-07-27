@@ -94,3 +94,5 @@ docker swarm join-token worker
 
 ## 啟動 redash
 	docker stack deploy -c docker-compose-redash.yml redash
+
+	
